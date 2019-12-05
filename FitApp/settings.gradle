@@ -1,0 +1,2 @@
+include ':app', ':registracija', ':core', ':database', ':webservice', ':repository', ':barcode-reader'
+rootProject.name='FitApp'
