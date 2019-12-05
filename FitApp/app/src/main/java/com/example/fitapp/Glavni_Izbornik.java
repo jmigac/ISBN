@@ -49,11 +49,8 @@ public class Glavni_Izbornik extends AppCompatActivity {
                 switch (v.getId()){
                     case R.id.btnBarkodSkener:
                         try{
-                            System.out.println("Pokrenul fragment barkoda!");
-                            FragmentManager manager = getSupportFragmentManager();
-                            FragmentTransaction fragmentTransaction = manager.beginTransaction();
-                            fragmentTransaction.add(R.id.barcode_fragment,new BarcodeFragment());
-                            fragmentTransaction.commit();
+                            System.out.println("Pokrenul activity barkoda!");
+                            startActivity(new Intent(Glavni_Izbornik.this,BarkodSkenerActivity.class));
 
                         }
                         catch (Exception e){
